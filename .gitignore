@@ -23,6 +23,8 @@ Thumbs.db
 
 ## Build dir
 build/*
+zig-cache/
+zig-out/
 
 ## xcode specific
 *xcuserdata*
