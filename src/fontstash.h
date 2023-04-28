@@ -23,6 +23,11 @@
 extern "C" {
 #endif
 
+#ifdef _WIN32
+#include <windef.h>
+#include <winnls.h>
+#endif
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
