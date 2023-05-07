@@ -7,7 +7,7 @@ pub fn buildFontstash(b: *std.Build, target: std.zig.CrossTarget, optimize: std.
         .optimize = optimize,
     };
 
-    var fontstash = if (shared) b.addStaticLibrary(library_options) else b.addSharedLibrary(library_options);
+    var fontstash = if (shared) b.addSharedLibrary(library_options) else b.addStaticLibrary(library_options);
 
     fontstash.linkLibC();
 
