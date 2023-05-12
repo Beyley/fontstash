@@ -790,7 +790,7 @@ error:
 	return FONS_INVALID;
 }
 
-int fonsAddFontMem(FONScontext* stash, const char* name, unsigned char* data, int dataSize, int freeData)
+int fonsAddFontMem(FONScontext* stash, const char* name, const unsigned char* data, int dataSize, int freeData)
 {
 	int i, ascent, descent, fh, lineGap;
 	FONSfont* font;
